@@ -1,4 +1,4 @@
-Nombre Jorge Gabriel Caicedo Viteri
-Cedula 1725497190
-Materia Aplicacion de Tecnologias Web
-NRC 8496
+Nombre: Jorge Gabriel Caicedo Viteri;
+Cedula: 1725497190;
+Materia: Aplicacion de Tecnologias Web;
+NRC: 8496
