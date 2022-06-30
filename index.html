@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Foro Segundo Parcial</title>
+</head>
+<body>
+  <div class="container">
+    <div class="section">
+      <h1>Ejemplo Ajax con XMLHttpRequest</h1>
+      <p>Recuperar datos de  foro.txt.</p>
+      <button class="btn" id="boton">Recuperar datos</button>
+      <div class="section" id="datos"></div>
+    </div>
+  </div>
+
+<script>
+  document.querySelector('#boton').addEventListener('click',Cargartxt);
+  function Cargartxt() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.open('GET', 'foro.txt', true);
+    xhttp.send();
+    xhttp.onreadystatechange = function() {
+      if(this.readyState == 4 && this.status == 200){
+        document.querySelector('#datos').innerHTML = this.responseText;
+      }
+    }
+  }
+</script>
+
+</body>
+</html>
